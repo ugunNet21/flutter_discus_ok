@@ -4,10 +4,10 @@ A new Flutter project.
 
 ## Getting Started
 
-# backend_discuss
+# link backend_discuss <link="https://github.com/ugunNet21/backend_discuss">
 ini adalah back-end aplikasi chat flutter
 
-## Gambar Aplikasi
+## Gambar Front-End
 <img src="https://user-images.githubusercontent.com/45864165/209435391-2dfd6521-b32e-4948-a630-dd1d1dc1b886.png" width="600px">
 
 This project is a starting point for a Flutter application.
