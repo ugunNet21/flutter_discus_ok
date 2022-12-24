@@ -1,4 +1,4 @@
-# chat
+# Aplikasi Chat Discuss
 
 A new Flutter project.
 
