@@ -15,9 +15,9 @@ class ErrorPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            DView.textTitle(title),
-            DView.spaceHeight(),
-            DView.error(description),
+            Text(title), // Assuming DView.textTitle is a widget that displays a title
+            DView.height(),
+            Text(description),
           ],
         ),
       ),

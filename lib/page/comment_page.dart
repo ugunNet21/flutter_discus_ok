@@ -74,7 +74,7 @@ class CommentPage extends StatelessWidget {
                             '${Api.imageUser}/${comment.fromUser.image}',
                           ),
                         ),
-                        DView.spaceWidth(8),
+                        DView.width(8),
                         Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -110,9 +110,9 @@ class CommentPage extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                              DView.spaceHeight(4),
+                              DView.height(4),
                               Text(comment.description),
-                              if (comment.image != '') DView.spaceHeight(8),
+                              if (comment.image != '') DView.height(8),
                               if (comment.image != '')
                                 GestureDetector(
                                   onTap: () {
@@ -121,7 +121,7 @@ class CommentPage extends StatelessWidget {
                                       builder: (contextDialog) {
                                         return Column(
                                           children: [
-                                            DView.spaceHeight(),
+                                            DView.height(),
                                             DButtonCircle(
                                               diameter: 40,
                                               onClick: () =>
@@ -157,15 +157,15 @@ class CommentPage extends StatelessWidget {
                                     onTap: () {
                                       cComment.setReplyTo(comment.fromUser);
                                     },
-                                    child: Row(
-                                      children: const [
+                                    child: const Row(
+                                      children:  [
                                         Icon(Icons.reply, size: 13),
                                         Text('Reply',
                                             style: TextStyle(fontSize: 12)),
                                       ],
                                     ),
                                   ),
-                                  if(cUser.data!.id==comment.fromIdUser) DView.spaceWidth(12),
+                                  if(cUser.data!.id==comment.fromIdUser) DView.width(12),
                                   if(cUser.data!.id==comment.fromIdUser) GestureDetector(
                                     onTap: () {
                                       CommentSource.delete(comment.id, comment.image).then((success) {
@@ -174,8 +174,8 @@ class CommentPage extends StatelessWidget {
                                         }
                                       });
                                     },
-                                    child: Row(
-                                      children: const [
+                                    child: const Row(
+                                      children:  [
                                         Icon(Icons.delete, size: 13),
                                         Text('Delete',
                                             style: TextStyle(fontSize: 12)),

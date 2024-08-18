@@ -68,14 +68,14 @@ class _UpdateTopicPageState extends State<UpdateTopicPage> {
             controller: controllerTitle,
             title: 'Title',
           ),
-          DView.spaceHeight(),
+          DView.height(),
           DInput(
             controller: controllerDescription,
             title: 'Description',
             minLine: 1,
             maxLine: 5,
           ),
-          DView.spaceHeight(),
+          DView.height(),
         ],
       ),
     );

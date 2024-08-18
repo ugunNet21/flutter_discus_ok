@@ -68,7 +68,7 @@ class ProfilePage extends StatelessWidget {
                           color: Colors.white,
                         ),
                       ),
-                      DView.spaceHeight(8),
+                      DView.height(8),
                       Consumer<CProfile>(
                         builder: (contextConsumer, _, child) {
                           return Material(
@@ -124,7 +124,7 @@ class ProfilePage extends StatelessWidget {
               ],
             ),
           ),
-          DView.spaceHeight(),
+          DView.height(),
           if (cUser.data!.id != user.id)
             Consumer<CProfile>(
               builder: (contextConsumer, _, child) {
@@ -191,7 +191,7 @@ class ProfilePage extends StatelessWidget {
     return Column(
       children: [
         Text(title),
-        DView.spaceHeight(4),
+        DView.height(4),
         DView.textTitle(AppFormat.infoNumber(value.toDouble())),
       ],
     );

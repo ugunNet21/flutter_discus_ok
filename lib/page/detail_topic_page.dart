@@ -34,7 +34,7 @@ class DetailTopicPage extends StatelessWidget {
                 ),
               ),
             ),
-            DView.spaceWidth(),
+            DView.width(),
             Text(
               topic.user!.username,
             ),
@@ -42,7 +42,7 @@ class DetailTopicPage extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: Padding(
-        padding: EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16),
         child: DButtonElevation(
           onClick: () {
             context.push(AppRoute.comment, extra: topic);
@@ -53,7 +53,7 @@ class DetailTopicPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text('Comments', style: TextStyle(color: Colors.white)),
-              DView.spaceWidth(4),
+              DView.width(4),
               const Icon(
                 Icons.arrow_forward_rounded,
                 size: 20,
@@ -68,7 +68,7 @@ class DetailTopicPage extends StatelessWidget {
         padding: const EdgeInsets.all(16),
         children: [
           DView.textTitle(topic.title),
-          DView.spaceHeight(4),
+          DView.height(4),
           Row(
             children: [
               const Icon(
@@ -76,7 +76,7 @@ class DetailTopicPage extends StatelessWidget {
                 color: Colors.grey,
                 size: 15,
               ),
-              DView.spaceWidth(4),
+              DView.width(4),
               Text(
                 AppFormat.fullDateTime(topic.createdAt),
                 style: const TextStyle(
@@ -86,9 +86,9 @@ class DetailTopicPage extends StatelessWidget {
               ),
             ],
           ),
-          DView.spaceHeight(),
+          DView.height(),
           Text(topic.description),
-          DView.spaceHeight(),
+          DView.height(),
           if (images.isNotEmpty)
             ...images.map((e) {
               return Container(
@@ -100,7 +100,7 @@ class DetailTopicPage extends StatelessWidget {
                       builder: (contextDialog) {
                         return Column(
                           children: [
-                            DView.spaceHeight(),
+                            DView.height(),
                             DButtonCircle(
                               diameter: 40,
                               onClick: () => Navigator.pop(contextDialog),

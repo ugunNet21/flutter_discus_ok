@@ -80,12 +80,12 @@ class AccountFragment extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        DView.spaceHeight(),
+        DView.height(),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: DView.textTitle('Account', size: 24),
         ),
-        DView.spaceHeight(30),
+        DView.height(30),
         Center(
           child: SizedBox(
             width: widthBoxImage,
@@ -135,7 +135,7 @@ class AccountFragment extends StatelessWidget {
             ),
           ),
         ),
-        DView.spaceHeight(12),
+        DView.height(12),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -152,7 +152,7 @@ class AccountFragment extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
-            DView.spaceWidth(),
+            DView.width(),
             SizedBox(
               height: 30,
               child: ElevatedButton.icon(
@@ -213,7 +213,7 @@ class AccountFragment extends StatelessWidget {
             );
           },
         ),
-        DView.spaceHeight(8),
+        DView.height(8),
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 16),
           width: double.infinity,
@@ -230,7 +230,7 @@ class AccountFragment extends StatelessWidget {
     return Column(
       children: [
         Text(title),
-        DView.spaceHeight(4),
+        DView.height(4),
         DView.textTitle(AppFormat.infoNumber(value.toDouble())),
       ],
     );

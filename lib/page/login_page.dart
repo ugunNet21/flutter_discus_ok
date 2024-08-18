@@ -69,21 +69,21 @@ class LoginPage extends StatelessWidget {
                       child: Column(
                         children: [
                           DView.textTitle('Login First'),
-                          DView.spaceHeight(8),
+                          DView.height(8),
                           const Divider(),
-                          DView.spaceHeight(4),
+                          DView.height(4),
                           DInput(
                             controller: controllerUsername,
                             title: 'Username',
                             spaceTitle: 4,
                           ),
-                          DView.spaceHeight(),
+                          DView.height(),
                           DInput(
                             controller: controllerPassword,
                             title: 'Password',
                             spaceTitle: 4,
                           ),
-                          DView.spaceHeight(),
+                          DView.height(),
                           SizedBox(
                             width: double.infinity,
                             child: ElevatedButton(

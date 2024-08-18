@@ -57,7 +57,7 @@ class AddTopic extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          DView.spaceHeight(),
+          DView.height(),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: DInput(
@@ -65,7 +65,7 @@ class AddTopic extends StatelessWidget {
               title: 'Title',
             ),
           ),
-          DView.spaceHeight(),
+          DView.height(),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: DInput(
@@ -75,7 +75,7 @@ class AddTopic extends StatelessWidget {
               maxLine: 5,
             ),
           ),
-          DView.spaceHeight(),
+          DView.height(),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Row(
@@ -87,7 +87,7 @@ class AddTopic extends StatelessWidget {
                   icon: const Icon(Icons.image),
                   label: const Text('Gallery'),
                 ),
-                DView.spaceWidth(),
+                DView.width(),
                 ElevatedButton.icon(
                   onPressed: () {
                     context.read<CAddTopic>().pickImage(ImageSource.camera);

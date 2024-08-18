@@ -38,7 +38,7 @@ class ItemTopic extends StatelessWidget {
                     ),
                   ),
                 ),
-                DView.spaceWidth(8),
+                DView.width(8),
                 Expanded(
                     child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -96,13 +96,13 @@ class ItemTopic extends StatelessWidget {
                 ),
               ],
             ),
-            DView.spaceHeight(12),
+            DView.height(12),
             Text(
               topic.description,
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
             ),
-            DView.spaceHeight(12),
+            DView.height(12),
             if (images.isNotEmpty)
               IntrinsicHeight(
                 child: Row(
@@ -140,7 +140,7 @@ class ItemTopic extends StatelessWidget {
                   ],
                 ),
               ),
-            DView.spaceHeight(8),
+            DView.height(8),
             Text(AppFormat.publish(topic.createdAt)),
           ],
         ),
